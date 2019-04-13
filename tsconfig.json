@@ -1,0 +1,22 @@
+{
+    "compilerOptions": {
+      "target": "esnext",
+      "module": "commonjs",
+      "strict": true,
+      "noUnusedLocals": true,
+      "noUnusedParameters": true,
+      "pretty": true,
+      "declaration": true,
+      "sourceMap": true,
+      "lib": [
+        "esnext",
+        "esnext.asynciterable",
+        "dom"
+      ],
+      "rootDir": "./src",
+      "outDir": "./bin"
+    },
+    "include": [
+      "./src/**/*.ts"
+    ]
+  }

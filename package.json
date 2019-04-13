@@ -1,0 +1,30 @@
+{
+  "name": "prerender",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "engines": {
+    "node": ">=10"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node bin/program.js",
+    "lint": "tslint --project . --format stylish"
+  },
+  "author": "ievgen.galamai",
+  "license": "MIT",
+  "dependencies": {
+    "koa": "^2.7.0",
+    "koa-logger": "^3.2.0",
+    "koa-route": "^3.2.0",
+    "puppeteer": "^1.14.0"
+  },
+  "devDependencies": {
+    "@types/koa": "^2.0.48",
+    "@types/koa-logger": "^3.1.1",
+    "@types/koa-route": "^3.2.4",
+    "@types/puppeteer": "^1.12.3",
+    "tslint": "^5.15.0",
+    "typescript": "^3.4.3"
+  }
+}
