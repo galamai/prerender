@@ -2,7 +2,7 @@ import * as Koa from 'koa';
 import * as route from 'koa-route';
 import * as koaLogger from 'koa-logger';
 import * as puppeteer from 'puppeteer';
-import { PreRender } from './PreRender';
+import { PreRender } from './prerender';
 
 export class Program {
     app: Koa = new Koa();

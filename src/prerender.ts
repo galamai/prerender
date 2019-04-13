@@ -11,9 +11,10 @@ export class RenderResult {
         return result;
     }
 
-    public static Ok(content: string) {
+    public static Result(statusCode: number, content: string) {
         const result = new RenderResult();
         result.content = content;
+        result.statusCode = statusCode;
         return result;
     }
 }
@@ -80,7 +81,7 @@ export class PreRender {
             await this.removeScripts(page);
 
             const content = await page.evaluate('document.firstElementChild.outerHTML');
-            return RenderResult.Ok(content);
+            return RenderResult.Result(statusCode, content);
 
         } catch (e) {
             console.error(e);
